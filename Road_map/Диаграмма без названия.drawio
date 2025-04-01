@@ -1,9 +1,51 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 YaBrowser/25.2.0.0 Safari/537.36" version="26.2.2">
   <diagram name="Страница — 1" id="76bo_cTdKxFD82bV4_EB">
-    <mxGraphModel>
+    <mxGraphModel dx="1974" dy="960" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="cx3Z5t4z99lbhJJ9GhjB-1" value="главная" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="199" y="17" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cx3Z5t4z99lbhJJ9GhjB-2" value="Лог" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="329" y="163" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cx3Z5t4z99lbhJJ9GhjB-3" value="Рег" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="83" y="163" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cx3Z5t4z99lbhJJ9GhjB-8" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="cx3Z5t4z99lbhJJ9GhjB-1" target="cx3Z5t4z99lbhJJ9GhjB-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="116" y="90" as="sourcePoint" />
+            <mxPoint x="166" y="40" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cx3Z5t4z99lbhJJ9GhjB-9" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="cx3Z5t4z99lbhJJ9GhjB-1" target="cx3Z5t4z99lbhJJ9GhjB-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="168" y="224" as="sourcePoint" />
+            <mxPoint x="218" y="174" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cx3Z5t4z99lbhJJ9GhjB-11" value="тут логи&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="102" y="85" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cx3Z5t4z99lbhJJ9GhjB-12" value="тут логи&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="315" y="85" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cx3Z5t4z99lbhJJ9GhjB-13" value="показ заказов" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="523" y="316" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cx3Z5t4z99lbhJJ9GhjB-14" value="Логи и запрос в дб" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="421" y="243" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cx3Z5t4z99lbhJJ9GhjB-15" value="предложения добавить заказ" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="680" y="351" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="cx3Z5t4z99lbhJJ9GhjB-16" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="cx3Z5t4z99lbhJJ9GhjB-2" target="cx3Z5t4z99lbhJJ9GhjB-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="508" y="258" as="sourcePoint" />
+            <mxPoint x="558" y="208" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
