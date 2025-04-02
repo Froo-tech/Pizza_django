@@ -1,11 +1,11 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (iPhone; CPU iPhone OS 18_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Mobile/15E148 Safari/604.1" version="26.2.3">
   <diagram name="Страница — 1" id="76bo_cTdKxFD82bV4_EB">
-    <mxGraphModel dx="1220" dy="1064" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2312" dy="2792" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="NnkHstzrRsLDRzWp3D6d-5" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-86" y="-47" width="708" height="816" as="geometry" />
+          <mxGeometry x="-86" y="-45" width="708" height="816" as="geometry" />
         </mxCell>
         <mxCell id="cx3Z5t4z99lbhJJ9GhjB-1" value="главная" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="199" y="17" width="120" height="60" as="geometry" />
@@ -113,19 +113,49 @@
           <mxGeometry x="236" y="-35" width="77" height="31" as="geometry" />
         </mxCell>
         <mxCell id="NnkHstzrRsLDRzWp3D6d-10" value="" style="group" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="-574" y="-54" width="360" height="807" as="geometry" />
+          <mxGeometry x="-457" y="-35" width="360" height="807" as="geometry" />
         </mxCell>
         <mxCell id="NnkHstzrRsLDRzWp3D6d-7" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="NnkHstzrRsLDRzWp3D6d-10">
           <mxGeometry x="-3" width="360" height="807" as="geometry" />
         </mxCell>
         <mxCell id="NnkHstzrRsLDRzWp3D6d-9" value="Таблица с заказами&amp;nbsp;" style="whiteSpace=wrap;html=1;" vertex="1" parent="NnkHstzrRsLDRzWp3D6d-10">
-          <mxGeometry x="92" y="92" width="170" height="87" as="geometry" />
+          <mxGeometry x="92" y="236" width="170" height="87" as="geometry" />
         </mxCell>
         <mxCell id="NnkHstzrRsLDRzWp3D6d-8" value="Менеджер" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="NnkHstzrRsLDRzWp3D6d-10">
           <mxGeometry x="131" y="28" width="98" height="31" as="geometry" />
         </mxCell>
+        <mxCell id="NnkHstzrRsLDRzWp3D6d-13" value="Вход" style="whiteSpace=wrap;html=1;" vertex="1" parent="NnkHstzrRsLDRzWp3D6d-10">
+          <mxGeometry x="117" y="69" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NnkHstzrRsLDRzWp3D6d-14" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="NnkHstzrRsLDRzWp3D6d-10" source="NnkHstzrRsLDRzWp3D6d-16" target="NnkHstzrRsLDRzWp3D6d-9">
+          <mxGeometry width="140" relative="1" as="geometry">
+            <mxPoint x="184" y="171" as="sourcePoint" />
+            <mxPoint x="173" y="209" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NnkHstzrRsLDRzWp3D6d-16" value="Проверка is_superuser" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="NnkHstzrRsLDRzWp3D6d-10">
+          <mxGeometry x="117" y="152" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NnkHstzrRsLDRzWp3D6d-17" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="NnkHstzrRsLDRzWp3D6d-10" source="NnkHstzrRsLDRzWp3D6d-13" target="NnkHstzrRsLDRzWp3D6d-16">
+          <mxGeometry width="140" relative="1" as="geometry">
+            <mxPoint x="-281" y="82" as="sourcePoint" />
+            <mxPoint x="-281" y="189" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="NnkHstzrRsLDRzWp3D6d-11" value="place_id" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="926" y="75" width="78" height="31" as="geometry" />
+        </mxCell>
+        <mxCell id="NnkHstzrRsLDRzWp3D6d-12" value="Остальное в стандартной таблице" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="1048" y="-101" width="280" height="31" as="geometry" />
+        </mxCell>
+        <mxCell id="NnkHstzrRsLDRzWp3D6d-19" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="cx3Z5t4z99lbhJJ9GhjB-3" target="cx3Z5t4z99lbhJJ9GhjB-13">
+          <mxGeometry width="140" relative="1" as="geometry">
+            <mxPoint x="146" y="920" as="sourcePoint" />
+            <mxPoint x="286" y="920" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
