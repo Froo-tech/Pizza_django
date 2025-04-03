@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 YaBrowser/25.2.0.0 Safari/537.36" version="26.2.3">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 YaBrowser/25.2.0.0 Safari/537.36" version="26.2.4">
   <diagram name="Страница — 1" id="76bo_cTdKxFD82bV4_EB">
-    <mxGraphModel dx="1156" dy="831" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2083" dy="972" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -141,8 +141,8 @@
             <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="NnkHstzrRsLDRzWp3D6d-11" value="place_id" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" parent="1" vertex="1">
-          <mxGeometry x="926" y="75" width="78" height="31" as="geometry" />
+        <mxCell id="NnkHstzrRsLDRzWp3D6d-11" value="place" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="922" y="70" width="56" height="31" as="geometry" />
         </mxCell>
         <mxCell id="NnkHstzrRsLDRzWp3D6d-12" value="Остальное в стандартной таблице" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="1048" y="-101" width="280" height="31" as="geometry" />
@@ -152,6 +152,26 @@
             <mxPoint x="146" y="920" as="sourcePoint" />
             <mxPoint x="286" y="920" as="targetPoint" />
             <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rdnh3AhMXwqYGaspcGQg-1" value="payments" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1436" y="-45" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Rdnh3AhMXwqYGaspcGQg-2" value="payment_id" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="Rdnh3AhMXwqYGaspcGQg-1">
+          <mxGeometry y="30" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Rdnh3AhMXwqYGaspcGQg-3" value="card_number" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="Rdnh3AhMXwqYGaspcGQg-1">
+          <mxGeometry y="60" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Rdnh3AhMXwqYGaspcGQg-6" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="DWacJJg4VQyoYq9Jz0QU-3" target="Rdnh3AhMXwqYGaspcGQg-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1463" y="-44" as="sourcePoint" />
+            <mxPoint x="1513" y="-94" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1261" y="-66" />
+              <mxPoint x="1337" y="-66" />
+              <mxPoint x="1403" y="-66" />
+            </Array>
           </mxGeometry>
         </mxCell>
       </root>
