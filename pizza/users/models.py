@@ -12,8 +12,6 @@ class CustomUserCreationForm(UserCreationForm):
         fields = ("username", "email", "tel", "password1", "password2")
 
 
-class Images(models.Model):
-    img = models.ImageField(upload_to='article', height_field=100, width_field=100)
 
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)

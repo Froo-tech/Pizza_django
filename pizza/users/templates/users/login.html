@@ -4,285 +4,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Вход в систему</title>
+    <title>Регистрация</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        :root {
-            --primary-color: #5cb85c;
-            --primary-hover: #4cae4c;
-            --error-color: #d9534f;
-            --text-color: #333;
-            --light-gray: #f5f5f5;
-            --border-color: #ddd;
-        }
-
         body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            background-color: var(--light-gray);
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
             margin: 0;
             padding: 0;
-            color: var(--text-color);
-            line-height: 1.6;
-        }
-
-        .navbar {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 0 20px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .navbar-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 15px 0;
-        }
-
-        .navbar-brand a {
-            color: white;
-            text-decoration: none;
-            font-size: 20px;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .navbar-links ul {
-            display: flex;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            align-items: center;
-        }
-
-        .navbar-links li {
-            position: relative;
-        }
-
-        .navbar-links a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 15px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            transition: all 0.3s;
-            border-radius: 4px;
-        }
-
-        .navbar-links a:hover {
-            background-color: var(--primary-hover);
-        }
-
-        .login-container {
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: calc(100vh - 70px);
-            padding: 20px;
+            min-height: 100vh;
+            color: #333;
         }
-
+        .main {
+            width: 100%;
+            max-width: 500px;
+        }
         .con {
             background: #fff;
-            width: 100%;
-            max-width: 420px;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 5px 25px rgba(0,0,0,0.08);
-            animation: fadeIn 0.5s ease-out;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
         }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+        .messages {
+            margin-bottom: 20px;
         }
-
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        h1 {
-            text-align: center;
-            margin: 0 0 25px;
-            color: var(--text-color);
-            font-size: 28px;
-        }
-
-        .error-con {
-            background-color: #fdf7f7;
-            color: var(--error-color);
+        .alert {
             padding: 12px 15px;
-            border-radius: 6px;
-            border-left: 4px solid var(--error-color);
+            border-radius: 4px;
+            margin-bottom: 15px;
+            font-size: 0.9em;
+        }
+        .alert-success {
+            background-color: #dff0d8;
+            color: #3c763d;
+            border: 1px solid #d6e9c6;
+        }
+        .alert-error {
+            background-color: #f2dede;
+            color: #a94442;
+            border: 1px solid #ebccd1;
+        }
+        .alert-info {
+            background-color: #d9edf7;
+            color: #31708f;
+            border: 1px solid #bce8f1;
+        }
+        .error-con {
+            color: #d9534f;
+            background-color: #fdf7f7;
+            border: 1px solid #eed3d7;
+            padding: 10px 15px;
+            border-radius: 4px;
+            margin-bottom: 20px;
             display: flex;
             align-items: center;
             gap: 10px;
-            margin-bottom: 10px;
         }
-
+        form {
+            margin-top: 20px;
+        }
+        .form-con {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
         label {
-            font-weight: 600;
-            font-size: 15px;
-            margin-bottom: -15px;
+            font-weight: bold;
+            margin-bottom: -10px;
+            font-size: 0.95em;
         }
-
         input {
-            padding: 14px 16px;
-            border: 2px solid var(--border-color);
-            border-radius: 6px;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
             font-size: 16px;
-            transition: all 0.3s ease;
+            transition: border-color 0.3s;
         }
-
         input:focus {
-            border-color: var(--primary-color);
+            border-color: #5cb85c;
             outline: none;
             box-shadow: 0 0 0 3px rgba(92, 184, 92, 0.2);
         }
-
-        .but-con {
+        .but {
             margin-top: 10px;
         }
-
-        .btn {
+        button.reg {
             width: 100%;
-            padding: 14px;
-            background-color: var(--primary-color);
+            padding: 12px;
+            background-color: #5cb85c;
             color: white;
             border: none;
-            border-radius: 6px;
+            border-radius: 4px;
             font-size: 16px;
-            font-weight: 600;
+            font-weight: bold;
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: background-color 0.3s;
         }
-
-        .btn:hover {
-            background-color: var(--primary-hover);
-            transform: translateY(-2px);
+        button.reg:hover {
+            background-color: #4cae4c;
         }
-
-        .btn:active {
-            transform: translateY(0);
-        }
-
-        .links {
-            margin-top: 25px;
+        .log {
             text-align: center;
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
         }
-
-        .links a {
-            color: var(--primary-color);
+        .log a {
+            color: #337ab7;
             text-decoration: none;
-            font-size: 14px;
+            font-size: 0.95em;
             transition: color 0.2s;
         }
-
-        .links a:hover {
-            color: var(--primary-hover);
+        .log a:hover {
+            color: #23527c;
             text-decoration: underline;
         }
-
-        .sr-only {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            white-space: nowrap;
-            border-width: 0;
+        .password-strength {
+            margin-top: -10px;
+            font-size: 0.8em;
+            color: #666;
         }
-
-        @media (max-width: 768px) {
-            .navbar-links {
-                display: none;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                background-color: var(--primary-color);
-                padding: 20px;
-                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            }
-
-            .navbar-links.active {
-                display: block;
-            }
-
-            .navbar-links ul {
-                flex-direction: column;
-                gap: 15px;
-            }
-
-            .navbar-toggle {
-                display: block;
-            }
-        }
-
-        @media (max-width: 480px) {
+        @media (max-width: 600px) {
             .con {
-                padding: 30px 25px;
+                padding: 20px;
                 margin: 20px;
-            }
-
-            h1 {
-                font-size: 24px;
             }
         }
     </style>
 </head>
 <body>
-
-    <div class="login-container">
+    <div class="main">
         <div class="con">
-            <form action="" method="post" aria-labelledby="login-form-title">
-                <h1 id="login-form-title" class="sr-only">Форма входа</h1>
-                <h1>Вход в систему</h1>
-
-                {% if error %}
-                <div class="error-con" role="alert" aria-live="assertive">
-                    <i class="fas fa-exclamation-circle"></i> {{ error }}
-                </div>
+            <div class="messages">
+                {% if messages %}
+                    {% for message in messages %}
+                        <div class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %}">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
                 {% endif %}
+            </div>
 
-                <label for="username">Имя пользователя:</label>
-                <input type="text" id="username" name="username" required aria-required="true" placeholder="Введите ваш логин">
+            <form method="post">
+                {% csrf_token %}
+                <div class="form-con">
+                    {% if error %}
+                    <div class="error-con" role="alert" aria-live="assertive">
+                        <i class="fas fa-exclamation-circle"></i>{{ error }}
+                    </div>
+                    {% endif %}
 
-                <label for="password">Пароль:</label>
-                <input type="password" id="password" name="password" required aria-required="true" placeholder="Введите ваш пароль">
+                    <label for="username">Имя пользователя</label>
+                    <input class="username" type="text" name="username" required placeholder="Придумайте логин">
 
-                <div class="but-con">
-                    {% csrf_token %}
-                    <button type="submit" class="btn">Войти</button>
-                </div>
+                    <label for="email">Электронная почта</label>
+                    <input class="email" type="email" name="email" required placeholder="example@mail.com">
 
-                <div class="links">
-                    <a href="{% url 'users:register' %}">Нет аккаунта? Зарегистрироваться</a>
-                    <a href="/users/password-reset/">Забыли пароль?</a>
+                    <label for="tel">Телефон</label>
+                    <input class="tel" type="tel" name="tel" required placeholder="+7 (XXX) XXX-XX-XX">
+
+                    <label for="password">Пароль</label>
+                    <input class="password" type="password" name="password" required placeholder="Не менее 8 символов">
+                    <div class="password-strength">Используйте буквы, цифры и специальные символы</div>
+
+                    <label for="password_">Подтверждение пароля</label>
+                    <input class="password_" type="password" name="password_" required placeholder="Повторите пароль">
+
+                    <div class="but">
+                        <button class="reg" type="submit">Зарегистрироваться</button>
+                    </div>
                 </div>
             </form>
+
+            <div class="log">
+                Уже есть аккаунт? <a href="/users/login">Войти</a>
+            </div>
         </div>
     </div>
-
-    <script>
-        document.querySelector('.navbar-toggle').addEventListener('click', function() {
-            const navbarLinks = document.querySelector('.navbar-links');
-            navbarLinks.classList.toggle('active');
-        });
-    </script>
 </body>
 </html>
